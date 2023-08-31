@@ -11,7 +11,8 @@ const Colors = {
   OPERATOR: ['#f59e0b', '#b45309'],
 };
 
-const Button = ({ title, onPress, buttonStyle, buttonType }) => {
+const Button = ({ title, onPress, buttonStyle, buttonType, key }) => {
+  console.log(key);
   return (
     <Pressable
       style={({ pressed }) => [
@@ -46,7 +47,7 @@ const styles = StyleSheet.create({
   button: {
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'tomato',
+    borderWidth: 1,
   },
   title: {
     color: 'white',
